@@ -8,13 +8,14 @@ class Calculadora():
         self.ventana = ventana
         self.ventana.title('Calculadora')
         self.ventana.config(bg='gray12')
+        self.ventana.resizable(0,0)
         self.operacion = ''
 
         #Display
 
         self.entry_display = Entry(self.ventana)
         self.entry_display.grid(row=0,column=0, pady=20, columnspan=4)
-        self.entry_display.config(fg="white", bg="gray12", width=10, border=0, font="Arial, 30", justify="right")
+        self.entry_display.config(fg="white", bg="gray12", width=12, border=0, font="Arial, 25", justify="right")
 
         #Botones
         boton_borrar = self.colocar_boton('C', mostrar=False, color='orange')
