@@ -1,1 +1,1 @@
-# calculadora-python
+# Calculadora hecha en python usando POO
